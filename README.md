@@ -8,3 +8,7 @@ Check the output of the outputcolumns https://docs.microsoft.com/en-us/dotnet/ma
 **clustering**: outputs a uint - the id of the nearest cluster, and a float array containing the distances to each cluster where index is cluserid - 1. The metrics given from `mlContext.Clustering.Evaluate()` contains `DaviesBouldinIndex`. To find the most suitable numberOfClusters for the data - find value of DaviesBouldinIndex where it is being the lowest.
 
 **anomalydetection**: outputs a double array with dimension depending on the type of transform used from the `TimeSeries` namespace, for instance DetectSpike or DetectChangepoint. Alert 0 or 1 specifies if the data point with 1 indicating it is spike/is changepoint, score is the input column of the data (in float), P-Value indicate how likely the point is being an anomaly, between 0 and 1 where towards 0 indicate anomaly, and Martingale value of how "weird" the data point is: https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/sales-anomaly-detection  
+
+**ranking**:
+
+**recommendation**: ouputs a a float score where high values indicate suitable recommandation - trained from 2 column features. Find highest score match between (for instance) customerid 1 with N productids.
