@@ -2,6 +2,7 @@ Check the output of the outputcolumns https://docs.microsoft.com/en-us/dotnet/ma
 
 **binaryclassification**: outputs range from 0 to 1 - wether the given data is or is not something (rows labeled 0 or 1).
 **multiclassclassification**: outputs an array which contain ranges of 0 to 1 - wether the given data is or is not something. Rows of the label column are integers 0 - N. (If label number 0 is pizza, label number 1 is hamburger and label number 2 is kebab, output array[0] is wether or not the given data is pizza, raging 0.0 - 1.0, and array[1] 0.0 - 1.0 wether it is being hamburger, array[2] 0.0 - 1.0 wether it is being kebab).
+Seem like it does not always have to oupt floar array though?: https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/github-issue-classification
 
 **regression**: outputs a predicted float - based on trained data where one column (of float) was marked as label - with new data missing the corresponding label column.
 
